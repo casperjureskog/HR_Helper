@@ -1,0 +1,94 @@
+/* grayscales */
+$white:    	#fff;
+$gray-100: 	#f8f9fa;
+$gray-200: 	#e9ecef;
+$gray-300: 	#dee2e6;
+$gray-400: 	#ced4da;
+$gray-500: 	#adb5bd;
+$gray-600: 	#353535;
+$gray-700: 	#495057;
+$gray-800: 	#1e1e1e;
+$gray-900: 	#212529;
+$black: 	#000;
+$grays: ();
+$grays: map-merge(
+	(
+		"100": $gray-100,
+		"200": $gray-200,
+		"300": $gray-300,
+		"400": $gray-400,
+		"500": $gray-500,
+		"600": $gray-600,
+		"700": $gray-700,
+		"800": $gray-800,
+		"900": $gray-900
+	),
+	$grays
+);
+/* colors */
+$blue:			#6884f0;
+$purple:		#D500F9; // creo purple
+$pink:			#e61c5a; // creo pink
+$red:			#F06868;
+$orange:		#FF910F;
+$yellow:		#FCC00C; // creo yellow
+$green:			#86fd25; // creo green
+$colors: ();
+$colors: map-merge(
+	(
+		"blue": 		$blue,
+		"purple": 		$purple,
+		"pink": 		$pink,
+		"red": 			$red,
+		"orange": 		$orange,
+		"yellow": 		$yellow,
+		"green": 		$green,
+		"white": 		$white,
+		"gray-light": 	$gray-200,
+		"gray": 		$gray-600,
+		"gray-dark": 	$gray-800,
+        "gray-darker": 	$gray-900,
+		"black": 		$black,
+	),
+	$colors
+);
+/* variants */
+$primary:$yellow;
+$secondary:$orange;
+$success:$green;
+$info:$blue;
+$warning:$yellow;
+$danger:$red;
+$light:$gray-100;
+$gray:$gray-500;
+$dark:$gray-800;
+$black:$black;
+$theme-colors: ();
+$theme-colors: map-merge(
+	(
+		"primary": 			$primary,
+		"primary-trans": 	rgba($primary, 0.9),
+		"secondary": 		$secondary,
+		"secondary-trans": 	rgba($secondary, 0.9),
+		"success": 			$success,
+		"success-trans": 	rgba($success, 0.9),
+		"info": 			$info,
+		"info-trans": 		rgba($info, 0.9),
+		"warning": 			$warning,
+		"warning-trans": 	rgba($warning, 0.9),
+		"danger": 			$danger,
+		"danger-trans": 	rgba($danger, 0.9),
+		"light": 			$light,
+		"light-trans": 		rgba($light, 0.9),
+		"dark": 			$dark,
+		"dark-trans": 		rgba($dark, 0.7),
+		"gray": 			$gray,
+		"gray-trans": 		rgba($gray, 0.9),
+		"black": 			$black,
+		"black-trans": 		rgba($black, 0.9),
+		"yellow":			rgba($yellow, 0.9),
+		"hero-trans":		rgba($black, 0.5),
+        "green": 			$green,
+	),
+	$theme-colors
+);

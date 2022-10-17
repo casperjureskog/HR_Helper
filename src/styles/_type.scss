@@ -1,0 +1,12 @@
+.small-date {
+    font-size: 0.825rem;
+    color: theme-colors('gray');
+}
+
+.text-ellipsis {
+    white-space: nowrap; 
+    width: 19rem;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    
+}

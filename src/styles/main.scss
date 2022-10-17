@@ -1,0 +1,42 @@
+// custom variables
+@import 'variables';
+// bootstrap core
+@import '../../node_modules/bootstrap/scss/bootstrap';
+// bootstrap-vue core
+@import '../../node_modules/bootstrap-vue/src/index';
+// custom mixins
+@import 'header';
+@import 'button';
+@import 'tab';
+@import 'type';
+
+
+html, body {
+	background: rgb(54, 49, 49);
+	height: 100%;
+	margin: 0;
+	padding: 0;
+    color: white;
+	&.menu-open {
+		overflow: hidden;
+	}
+}
+#app {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden;
+}
+#body {
+	flex-grow: 1;
+}
+
+.container {
+    @include media-breakpoint-down(lg) {
+        margin: 0;
+        max-width: unset;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

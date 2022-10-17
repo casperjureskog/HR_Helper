@@ -1,0 +1,46 @@
+.tab {
+    &-content {
+        background-color: dimgrey;
+    }
+    &-pane {
+        // padding: 0 0.9rem;
+    }
+}
+.nav{
+    &-pills {
+        padding: 0;
+        background: transparent !important;
+        width: 100vw;
+        @include media-breakpoint-up(lg) {
+            width: 20rem;
+        }
+    }
+    &-item {
+        >.active {
+           background-color: #FCC00C !important;
+           border-radius: 0
+        }
+    }
+    &-link {
+        padding: 0;
+        border-radius: 0;
+        border-bottom: #2c2c2c solid 2px;
+        @include media-breakpoint-up(lg) {
+            padding: 0.5rem 1rem;
+        }
+    }
+}
+
+.card {
+    border: 0;
+    background: transparent !important;
+    height: calc(100vh - 3.75rem) !important;
+}
+
+.vh-100 {
+    height: calc(100vh - 3.75rem) !important;
+}
+
+.tabs {
+    height: calc(100vh - 3.75rem) !important;
+}

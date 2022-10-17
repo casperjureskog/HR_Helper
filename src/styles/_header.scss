@@ -1,0 +1,8 @@
+.add-user {
+    position: absolute;
+    right: 0rem;
+    z-index: 20;
+    @include media-breakpoint-up(lg) {
+        width: 50vw;
+    }
+}

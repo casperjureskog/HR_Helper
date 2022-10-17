@@ -1,0 +1,15 @@
+.btn {
+    &:focus {
+        box-shadow: unset !important;
+    }
+    &-plain {
+        background-color: unset !important;
+        border: 0 !important;
+        padding: 0 !important;
+        &:hover {
+            .text-danger {
+                color: #883a3a !important;
+            }
+        }
+    }
+}
