@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <Header @search="setSearch" @toast="toast"/>
+        <Header @search="setSearch" @toast="toast"/>
+        <Home @search="setSearch" @toast="toast" />
   </div>
 </template>
 
 <script>
 import '@/styles/main.scss'
 import Header from './components/Header.vue'
+import Home from './sections/Home.vue'
 export default {
     name: 'App',
     data() {
@@ -16,6 +18,7 @@ export default {
     },
     components: {
         Header,
+        Home
       
     },
     methods: {
