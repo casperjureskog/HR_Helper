@@ -1,0 +1,19 @@
+.badge {
+    &.bg {
+        &-1 {
+            background-color: rgba(#39715d, 0.1);
+        }
+        &-2 {
+            background-color: rgba(#39715d, 0.3);
+        }
+        &-3 {
+            background-color: rgba(#39715d, 0.5);
+        }
+        &-4 {
+            background-color: rgba(#39715d, 0.7);
+        }
+        &-5 {
+            background-color: rgba(#39715d, 0.9);
+        }
+    }
+}

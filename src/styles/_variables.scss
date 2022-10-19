@@ -27,12 +27,14 @@ $grays: map-merge(
 );
 /* colors */
 $blue:			#6884f0;
-$purple:		#D500F9; // creo purple
-$pink:			#e61c5a; // creo pink
+$purple:		#D500F9; 
+$pink:			#e61c5a; 
 $red:			#F06868;
 $orange:		#FF910F;
-$yellow:		#FCC00C; // creo yellow
-$green:			#86fd25; // creo green
+$yellow:		#FCC00C; 
+$green:			#509e82; 
+$green-light:   #66cda7;
+$green-dark:    #39715d;
 $colors: ();
 $colors: map-merge(
 	(
@@ -53,8 +55,8 @@ $colors: map-merge(
 	$colors
 );
 /* variants */
-$primary:$yellow;
-$secondary:$orange;
+$primary:$green;
+$secondary:$green-dark;
 $success:$green;
 $info:$blue;
 $warning:$yellow;
@@ -87,8 +89,8 @@ $theme-colors: map-merge(
 		"black": 			$black,
 		"black-trans": 		rgba($black, 0.9),
 		"yellow":			rgba($yellow, 0.9),
-		"hero-trans":		rgba($black, 0.5),
-        "green": 			$green,
+		"green-trans":		rgba($green-light, 0.5),
+        "green": 			$green-light,
 	),
 	$theme-colors
 );

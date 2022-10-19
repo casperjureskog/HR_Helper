@@ -2,9 +2,6 @@
     &-content {
         background-color: dimgrey;
     }
-    &-pane {
-        // padding: 0 0.9rem;
-    }
 }
 .nav{
     &-pills {
@@ -30,13 +27,11 @@
         }
     }
 }
-
 .card {
     border: 0;
     background: transparent !important;
     height: calc(100vh - 3.75rem) !important;
 }
-
 .vh-100 {
     height: calc(100vh - 3.75rem) !important;
 }

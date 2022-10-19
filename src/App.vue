@@ -1,7 +1,7 @@
 <template>
   <div id="app">
         <Header @search="setSearch" @toast="toast"/>
-        <Home @search="setSearch" @toast="toast" />
+        <Home :search="search" @toast="toast" />
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import '@/styles/main.scss'
 import Header from './components/Header.vue'
 import Home from './sections/Home.vue'
 export default {
-    name: 'App',
+    name: 'HR_helper',
     data() {
         return {
             search: null
@@ -37,7 +37,6 @@ export default {
                 toaster: 'b-toaster-bottom-right',
                 variant: variant,
                 solid: true,
-                // appendToast: append
             })
         }
     },

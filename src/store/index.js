@@ -34,7 +34,6 @@ export default new Vuex.Store({
                 let url = `${process.env.VUE_APP_API}users/${data}`
                 axios.get(url, { header: true })
                     .then((response) => {
-                        console.log('user', response);
                         commit('user', response.data)
                         resolve(response.data)
                     })
@@ -48,7 +47,6 @@ export default new Vuex.Store({
                 let url = `${process.env.VUE_APP_API}users/`
                 axios.get(url,{ header: true } )
                 .then((response) => {
-                    console.log('users', response);
                     commit('users', response.data)
                     resolve(response.data)
                 })
@@ -57,7 +55,7 @@ export default new Vuex.Store({
                 })
             })
         },
-        createUser({ commit },data) {
+        createUser(data) {
             return new Promise((resolve, reject) => {
                 let url = `${process.env.VUE_APP_API}users`
                 axios.post(url, data)
@@ -65,12 +63,11 @@ export default new Vuex.Store({
                     resolve(response.data)
                 })
                 .catch((error) => {
-                    console.log(commit);
                     reject(error)
                 })
             })
         },
-        deleteUser({ commit },data) {
+        deleteUser(data) {
             return new Promise((resolve, reject) => {
                 let url = `${process.env.VUE_APP_API}users/${data}`
                 axios.delete(url)
@@ -78,20 +75,18 @@ export default new Vuex.Store({
                         resolve(response.data)
                     })
                     .catch((error) => {
-                        console.log(commit);
                         reject(error)
                     })
             })
         },
-        updateUsers({ commit },data) {
+        updateUsers(data) {
             return new Promise((resolve, reject) => {
-                let url = `${process.env.VUE_APP_API}users/1/todos/${data.id}`
+                let url = `${process.env.VUE_APP_API}users/${data.id}`
                 axios.put(url, data)
                     .then((response) => {
                         resolve(response.data)
                     })
                     .catch((error) => {
-                        console.log(commit);
                         reject(error)
                     })
             })
